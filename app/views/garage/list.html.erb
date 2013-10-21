@@ -1,0 +1,11 @@
+<h1>My Garage Sale</h1>
+<ul>
+  <!-- <li>Children's clothing</li>
+  <li>Old shoes</li>
+  <li>Dull knives</li> -->
+
+  <% @stuff.each do |saleitems| %>
+  <li><%= saleitems[:item] %>: <%= saleitems[:price] %> </li>
+  <% end %>
+
+</ul>
